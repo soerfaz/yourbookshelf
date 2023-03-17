@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #609966;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+    /* background-color: dimgray; */
+    background-color:#EDF1D6;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #40513B;
+    color: white;
+}
+
+form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 16px;
+    
+}
+
+input[type=text], input[type=number] {
+    font-family: Raleway, sans-serif;
+    background: #F5F1FF;
+    border: 2px solid #9475EA;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.submit-button, .toggle-button, .delete-button {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border: 2px solid #5F30E2;
+    color: black;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #5F30E2;
+    color: white;
+}
+
+input[type=text], input[type=number], .submit-button:focus {
+    outline: none;
+}
+
+.bookshelf {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.bookrack {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 5px solid #5F30E2;
+    border-radius: 16px;
+    background-color: beige;
+}
+
+.booklist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-style: oblique;
+}
+
+.book-action {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.book-action>.delete-button {
+    background-color: red;
+    color: white;
+}
+
+.book-action>.toggle-button {
+    background-color: chartreuse;
+    color: white;
+}
+
+.delete-button:hover {
+    background: darkred;
+    border: 2px solid darkred;
+}
+
+.toggle-button:hover {
+    background: forestgreen;
+    border: 2px solid forestgreen;
+}
+
+ul li {
+    padding: 30px;
+}
+

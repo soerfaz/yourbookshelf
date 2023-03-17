@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookshelf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1>Your Bookshelf</h1>
+    </header>
+    <main>
+        <div class="bookshelf">
+            <h1>Masukkan Buku Anda</h1>
+            <form id="add-book-form">
+                <input type="text" id="title" placeholder="Judul Buku" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="year" placeholder="Tahun Terbit" required>
+                <button type="submit" class="submit-button">Tambah Buku</button>
+            </form>
+
+            <div class="bookrack">
+                <h2>Belum Selesai Dibaca</h2>
+                <ul id="unfinished-books" class="booklist">
+                </ul>
+
+            </div>
+            <div class="bookrack">
+                <h2>Selesai Dibaca</h2>
+                <ul id="finished-books" class="booklist">
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
